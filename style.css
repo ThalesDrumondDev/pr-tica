@@ -24,6 +24,12 @@ a {
   transition: ease-in-out 0.3s;
 }
 
+h2 {
+  font-family: 'press start 2p', cursive;
+  font-size: 45px;
+  color: #fff;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -107,6 +113,7 @@ color: #b6bdf0;
 }
 
 .linkedin a {
+  width: 100%;
   padding: 25px 0;
 }
 
@@ -163,8 +170,41 @@ color: #b6bdf0;
   }
 }
 
-@media (min-width: 1200px) {
-  .nav {
-    width: 50%
-  }
+/* sobre mim */ 
+
+#sobre-mim {
+  width: 100%;
+  background: linear-gradient(63.13deg, #780206, #061161 );
+}
+
+.ajustador-2 {
+  padding: 144px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 67px;
+  max-width: 1064px;
+  margin: 0 auto;
+}
+
+.avatar {
+  width: 323px;
+  height: 368px;
+  position: relative;
+}
+
+.sobre-mim {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sobre-mim p {
+  text-indent: 20px;
+  font-size: 20px;
+  max-width: 609.25px;
+  color: #b8b4b4;
+}
+
+.sobre-mim strong {
+  color: #fff;
 }
