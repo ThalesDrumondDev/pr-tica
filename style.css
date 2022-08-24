@@ -317,11 +317,11 @@ color: #b6bdf0;
 }
 
 @keyframes onHover {
-  0% {
+   0% {
       left: -110%;
       top: 90%;
   }
-   50% {
+    50% {
       left: 10%;
       top: -30%;
   }
