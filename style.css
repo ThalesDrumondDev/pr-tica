@@ -278,11 +278,11 @@ color: #b6bdf0;
   top: 90%;
 }
 
-.container .bi-instagram {
+ .container .bi-instagram {
   color: #383838;
 }
   
-.container .ig::before {
+ .container .ig::before {
   content: "";
   position: absolute;
   width: 120%;
