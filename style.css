@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quando&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
 * {
     padding: 0;
     margin: 0;
@@ -94,14 +96,14 @@ color: #b6bdf0;
   font-size: 25px;
   grid-area: descricao;
   font-weight: bold;
-  background-image: linear-gradient(64deg,rgb(230, 229, 229), #b8b4b4);
+  background: linear-gradient(64deg,rgb(230, 229, 229), #b8b4b4);
   background-clip: text;
   -webkit-background-clip: text;
   
 }
 
 .meu-nome {
-  font-size: 50px;
+  font-size: 55px;
 }
 
 .linkedin {
@@ -178,7 +180,7 @@ color: #b6bdf0;
 }
 
 .ajustador-2 {
-  padding: 144px 0;
+  padding: 110px 0;
   display: flex;
   flex-wrap: wrap;
   gap: 67px;
@@ -207,4 +209,124 @@ color: #b6bdf0;
 
 .sobre-mim strong {
   color: #fff;
+}
+
+/* redes-sociais */
+
+.container {
+  position: absolute;
+  top: 191%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.container .btn {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(63.13deg, #780206, #061161 );
+  margin: 10px;
+  border-radius: 30%;
+  overflow: hidden;
+  position: relative;
+  color: #42d2ff;
+}
+
+.container .btn i {
+  position: relative;
+  z-index: 4;
+  line-height: 90px;
+  font-size: 36px;
+  transition: 0.3s ease-in-out;
+}
+
+.container .bi-github {
+  color: #383838;
+}
+  
+.container .gh::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: linear-gradient(#7e7e7e, #3a3a3a);
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.container .bi-linkedin {
+  color: #383838;
+}
+  
+.container .fa::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: linear-gradient(#2391ff, #0059b3);
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.container .bi-instagram {
+  color: #383838;
+}
+  
+.container .ig::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle at 60% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+  
+.container .bi-facebook {
+  color: #383838;
+ 
+}
+  
+.container .lin::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: linear-gradient(#00c6ff, #0072ff);
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+  
+
+.container .btn:hover i {
+  color: #fff;
+  transform: scale(1.4);
+}
+
+.container .btn:hover::before {
+  animation: onHover 0.7s 1;
+  left: -10%;
+  top: -10%;
+}
+
+@keyframes onHover {
+  0% {
+      left: -110%;
+      top: 90%;
+  }
+  50% {
+      left: 10%;
+      top: -30%;
+  }
+  100% {
+      top: -10%;
+      left: -10%;
+  }
 }
