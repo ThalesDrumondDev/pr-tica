@@ -249,11 +249,11 @@ color: #b6bdf0;
   transition: 0.3s ease-in-out;
 }
 
-.container .bi-github {
+ .container .bi-github {
   color: #383838;
 }
   
-.container .gh::before {
+ .container .gh::before {
   content: "";
   position: absolute;
   width: 120%;
