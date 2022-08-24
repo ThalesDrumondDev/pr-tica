@@ -172,11 +172,17 @@ color: #b6bdf0;
   }
 }
 
+
 /* sobre mim */ 
 
 #sobre-mim {
   width: 100%;
   background: linear-gradient(63.13deg, #780206, #061161 );
+}
+
+.centralizador-2 {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .ajustador-2 {
@@ -215,8 +221,8 @@ color: #b6bdf0;
 
 .container {
   position: absolute;
-  top: 191%;
-  left: 57%;
+  top: 160%;
+  left: 55%;
   transform: translate(-50%, -50%);
   width: 70%;
   max-width: 1200px;
@@ -225,10 +231,10 @@ color: #b6bdf0;
 
 .container .btn {
   display: inline-block;
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   background: linear-gradient(63.13deg, #780206, #061161 );
-  margin: 10px;
+  margin: 15px;
   border-radius: 30%;
   overflow: hidden;
   position: relative;
@@ -238,7 +244,7 @@ color: #b6bdf0;
 .container .btn i {
   position: relative;
   z-index: 4;
-  line-height: 90px;
+  line-height: 80px;
   font-size: 36px;
   transition: 0.3s ease-in-out;
 }
@@ -330,3 +336,5 @@ color: #b6bdf0;
       left: -10%;
      }
 }
+
+
