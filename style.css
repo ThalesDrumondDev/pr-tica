@@ -221,7 +221,7 @@ color: #b6bdf0;
 
 .container {
   position: absolute;
-  top: 179%;
+  margin-top: -13%;
   left: 38%;
   transform: translate();
   width: 40%;
