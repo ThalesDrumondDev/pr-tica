@@ -130,33 +130,83 @@ color: #b6bdf0;
   }
 }
 
+/* botão */
 
-
-.linkedin {
-  height: 80px;
-  background-color:#303691;
-  display: flex;
-  justify-content: center;
-  border-radius: 62px;
+.but {
+  top: 80px;
+  position: relative;
+  padding: 20px 25px;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 200px;
+  overflow: hidden;
+  border-radius: 40px;
 }
 
-.linkedin a {
-  width: 100%;
-  padding: 25px 0;
+.but span {
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  font-family: Arial;
+  letter-spacing: 8px;
+  z-index: 1;
 }
 
-.link {
-  font-size:25px;
-  width:50%;
-  text-align: center;
-  padding: 12px 0 ;
-  transition: ease-in-out 0.3s;
+.liquid {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(63.13deg, #780206, #061161 );
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+  transform: .5s;
 }
 
-.link:hover {
-  letter-spacing: 5px;
-  color: white;
+.liquid::after,
+.liquid::before {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  background: rgb(135, 56, 56);
 }
+
+.liquid::before {
+  border-radius: 45%;
+  background: #4973ff;
+  animation: animate 5s linear infinite;
+}
+
+.liquid::after {
+  border-radius: 40%;
+  background: #061161;
+  animation: animate 10s linear infinite;
+}
+
+
+.but:hover .liquid {
+  top: -120px;
+}
+
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%)
+    rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%)
+    rotate(360deg);
+  }
+}
+
+
+
 
 .desenho {
   width: 450px;
@@ -247,8 +297,8 @@ color: #b6bdf0;
 
 .container {
   position: absolute;
-  margin-top: -13%;
-  left: 38%;
+  margin-top: -140px;
+  left: 34%;
   transform: translate();
   width: 40%;
   text-align: center;
