@@ -69,7 +69,7 @@ color: #b6bdf0;
 /* inicio */
 
 #inicio {
-  background: linear-gradient(63.13deg, #780206, #061161 );
+  background: linear-gradient(#003973, #E5E5BE);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -89,7 +89,8 @@ color: #b6bdf0;
 
 .title {
   position: relative;
-  color: #fff;
+  color: #E5E5BE;
+  font-weight: bold;
 }
 
 .meu-nome {
@@ -100,7 +101,7 @@ color: #b6bdf0;
 .rotate-words {
   display: inline;
   margin-left: 10px;
-  color: #00c6ff;
+  color: #003973;
 }
 
 .rotate-words span {
@@ -147,11 +148,12 @@ color: #b6bdf0;
 
 .but span {
   position: relative;
-  color: #fff;
-  font-size: 20px;
-  font-family: Arial;
-  letter-spacing: 8px;
-  z-index: 1;
+  color: #E5E5BE;
+  font-size: 17px;
+  font-family: 'Quando';
+  letter-spacing: 6px;
+  z-index: 8;
+  font-weight: bold;
 }
 
 .liquid {
@@ -160,7 +162,7 @@ color: #b6bdf0;
   left: 0;
   width: 200px;
   height: 200px;
-  background: linear-gradient(63.13deg, #780206, #061161 );
+  background: #003973;
   box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
   transform: .5s;
 }
@@ -174,7 +176,6 @@ color: #b6bdf0;
   top: 0;
   left: 50%;
   transform: translate(-50%, -75%);
-  background: rgb(135, 56, 56);
 }
 
 .liquid::before {
@@ -254,7 +255,11 @@ color: #b6bdf0;
 
 #sobre-mim {
   width: 100%;
-  background: linear-gradient(63.13deg, #780206, #061161 );
+  background:linear-gradient(#E5E5BE, #003973);
+}
+
+.sobre-mim h2 {
+  color: #000;
 }
 
 .centralizador-2 {
@@ -287,11 +292,11 @@ color: #b6bdf0;
   text-indent: 20px;
   font-size: 20px;
   max-width: 609.25px;
-  color: #b8b4b4;
+  color: #111;
 }
 
 .sobre-mim strong {
-  color: #fff;
+  color: #061161;
 }
 
 /* redes-sociais */
@@ -299,7 +304,7 @@ color: #b6bdf0;
 .container {
   position: absolute;
   margin-top: -140px;
-  left: 34%;
+  left: 36%;
   transform: translate();
   width: 40%;
   text-align: center;
@@ -309,7 +314,7 @@ color: #b6bdf0;
   display: inline-block;
   width: 70px;
   height: 70px;
-  background: linear-gradient(63.13deg, #780206, #061161 );
+  background: linear-gradient(#2391ff );
   margin: 10px;
   border-radius: 30%;
   overflow: hidden;
@@ -326,7 +331,7 @@ color: #b6bdf0;
 }
 
  .container .bi-github {
-  color: #383838;
+  color: #111;
 }
   
  .container .gh::before {
@@ -341,7 +346,7 @@ color: #b6bdf0;
 }
 
 .container .bi-linkedin {
-  color: #383838;
+  color: #111;
 }
   
 .container .fa::before {
@@ -356,7 +361,7 @@ color: #b6bdf0;
 }
 
  .container .bi-instagram {
-  color: #383838;
+  color: #111;
 }
   
  .container .ig::before {
@@ -371,7 +376,7 @@ color: #b6bdf0;
 }
   
 .container .bi-facebook {
-  color: #383838;
+  color: #111;
  
 }
   
@@ -412,3 +417,4 @@ color: #b6bdf0;
       left: -10%;
      }
 }
+
